@@ -127,7 +127,7 @@ const Gallery: React.FC<GalleryProps> = ({ onBack }) => {
                   transition={{ delay: index * 0.05 }}
                 >
                   <div className="aspect-square bg-gradient-to-br from-pink-200 to-purple-200 rounded-xl flex items-center justify-center mb-2 overflow-hidden">
-                    <img src={`/public/images/memories2/${image}`} alt={image} className="w-full h-full object-cover" />
+                    <img src={`/images/memories2/${image}`} alt={image} className="w-full h-full object-cover" />
                   </div>
                   <p className="text-xs text-center text-gray-700 truncate">{image}</p>
                 </motion.div>
@@ -155,7 +155,7 @@ const Gallery: React.FC<GalleryProps> = ({ onBack }) => {
                   transition={{ delay: index * 0.1 }}
                 >
                   <div className="aspect-video bg-gradient-to-br from-purple-200 to-blue-200 rounded-xl flex items-center justify-center mb-4 overflow-hidden">
-                    <video src={`/public/videos/videomemo/${video}`} className="w-full h-full object-cover" />
+                    <video src={`/videos/videomemo/${video}`} className="w-full h-full object-cover" />
                   </div>
                   <p className="text-sm text-center text-gray-700">{video}</p>
                 </motion.div>
@@ -194,13 +194,13 @@ const Gallery: React.FC<GalleryProps> = ({ onBack }) => {
                 <div className="flex items-center justify-center h-96 bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl">
                   {selectedMedia.includes('.jpg') ? (
                     <img 
-                      src={`/public/images/memories2/${selectedMedia}`}
+                      src={`/images/memories2/${selectedMedia}`}
                       alt={selectedMedia}
                       className="max-w-full max-h-full object-contain"
                     />
                   ) : (
                     <video
-                      src={`/public/videos/videomemo/${selectedMedia}`}
+                      src={`/videos/videomemo/${selectedMedia}`}
                       controls
                       className="max-w-full max-h-full"
                     />
